@@ -3,18 +3,10 @@ function NavTabs({ currentPage, handlePageChange }) {
         <ul class="nav justify-content-center">
             <li class="nav-item">
                 <a 
-                    href="#home"
-                    onClick={() => handlePageChange('Home')}
-                    className={currentPage === 'Home' ? 'nav-link active' : 'nav-link'}>
-                    Home
-                </a>
-            </li>
-            <li class="nav-item">
-                <a 
                     href="#about"
                     onClick={() => handlePageChange('About')}
                     className={currentPage === 'About' ? 'nav-link active' : 'nav-link'}>
-                    About
+                    About Me
                 </a>
             </li>
             <li class="nav-item">
@@ -44,3 +36,5 @@ function NavTabs({ currentPage, handlePageChange }) {
         </ul>
     );
 }
+
+export default NavTabs;
