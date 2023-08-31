@@ -27,6 +27,8 @@ export default function PortfolioContainer() {
         <div>
             <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
             <main className="mx-3">{renderPage()}</main>
+
+            {/* does the footer go in here? */}
         </div>
     );
 }
