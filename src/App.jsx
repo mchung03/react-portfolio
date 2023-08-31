@@ -1,18 +1,5 @@
-// import { useState } from 'react'
-import Navbar from './components/Navbar';
-import Header from './components/Header';
-import Section from './components/Section';
+import PortfolioContainer from './components/PortfolioContainer';
 
-function App() {
-  // const [count, setCount] = useState(0)
+const App = () => <PortfolioContainer/>;
 
-  return (
-    <div>
-      <Navbar />
-      <Header />
-      <Section />
-    </div>
-  )
-}
-
-export default App
+export default App;
