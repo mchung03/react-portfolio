@@ -25,6 +25,9 @@ export default function PortfolioContainer() {
 
     return (
         <div>
+            <header class="ms-3">
+                <h2>Minhee Chung</h2>
+            </header>
             <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
             <main className="mx-3">{renderPage()}</main>
             <footer class="mt-3 mb-4 ms-5">

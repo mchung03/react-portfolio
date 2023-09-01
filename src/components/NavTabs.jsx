@@ -1,8 +1,7 @@
 function NavTabs({ currentPage, handlePageChange }) {
   	return (
         <div>
-            <h1>Minhee Chung</h1>
-            <ul class="nav justify-content-center">
+            <ul class="nav nav-tabs justify-content-center">
                 <li class="nav-item">
                     <a 
                         href="#about"
