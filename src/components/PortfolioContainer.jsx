@@ -1,9 +1,12 @@
 import { useState } from "react";
 import NavTabs from './NavTabs';
+import Header from './pages/Header'
 import About from './pages/About';
 import Contact from './pages/Contact';
 import Portfolio from './pages/Portfolio';
 import Resume from './pages/Resume';
+import Footer from './pages/Footer'
+import '../../public/css/styles.css'
 
 export default function PortfolioContainer() {
     const [currentPage, setCurrentPage] = useState('About');
@@ -25,18 +28,12 @@ export default function PortfolioContainer() {
 
     return (
         <div>
-            <header class="text-center mb-3">
-                <h2>Minhee Chung</h2>
-            </header>
+            <Header />
             <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
-            <main className="mx-3">{renderPage()}</main>
-            <footer class="mt-3 ms-4">
-                <h5>Links:</h5>
-                <a href="https://www.linkedin.com/in/minhee-chung/" target="_blank"><i class="fa-brands fa-github fa-2xl me-3"></i></a>
-                <a href="https://github.com/mchung03" target="_blank"><i class="fa-brands fa-linkedin fa-2xl me-3"></i></a>
-                <a href="https://medium.com/@minhee.chung14" target="_blank"><i class="fa-brands fa-medium fa-2xl"></i></a>
-            </footer>
-            
+            <main className="mx-3 main-color">
+                {renderPage()}
+            </main>
+            <Footer />
         </div>
     );
 }

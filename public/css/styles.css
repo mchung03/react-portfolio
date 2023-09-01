@@ -1,0 +1,47 @@
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+.header-color {
+    background-color: #1B263B;
+    color: white;
+    padding: 3rem;
+}
+
+.nav-tabs {
+    background-color: #778DA9;
+}
+
+.nav-item a {
+    color: white;
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+.form-style {
+    background-color: #f1f1ef;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-top: 2rem;
+}
+
+.card-color,
+.card-body {
+    background-color: #f1f1ef;
+}
+
+li.list-group-item {
+    background-color: #f1f1ef;
+}
+
+li.list-group-item-primary {
+    background-color: #415A77;
+    color: white;
+}
+
+.footer-color {
+    margin-top: 3rem;
+    background-color: #778DA9;
+    height: 5rem;
+    box-sizing: border-box;
+}

@@ -50,7 +50,6 @@ export default function Form() {
       return;
     }
 
-    // Clear error message and reset fields
     setErrorMessage('');
     setName('');
     setEmail('');
@@ -63,33 +62,35 @@ export default function Form() {
   };
 
   return (
-  <form class="mt-2" onSubmit={handleFormSubmit}>
-  <div class="mb-3">
-    <label class="form-label">Name</label>
+  <div>
+  <h2 className='mt-3'>Contact Me</h2>
+  <form className="form-style" onSubmit={handleFormSubmit}>
+  <div className="mb-3">
+    <label className="form-label">Email Address</label>
     <input
       value={email}
       name="email"
       onChange={handleInputChange}
       onBlur={handleInputBlur}
       type="email"
-      class="form-control" 
+      className="form-control" 
       placeholder="name@example.com"></input>
     {emailTouched && !email && <p className="error-text">Email is required</p>}
   </div>
-  <div class="mb-3">
-    <label class="form-label">Email address</label>
+  <div className="mb-3">
+    <label className="form-label">Name</label>
     <input 
       value={name}
       name="name"
       onChange={handleInputChange}
       onBlur={handleInputBlur}
       type="text"
-      class="form-control" 
+      className="form-control" 
       placeholder="John Doe"></input>
     {nameTouched && !name && <p className="error-text">Name is required</p>}
   </div>
-  <div class="mb-3">
-    <label class="form-label">Message</label>
+  <div className="mb-3">
+    <label className="form-label">Message</label>
     <textarea 
       className="form-control" 
       value={message}
@@ -102,12 +103,13 @@ export default function Form() {
     </textarea>
     {messageTouched && !message && <p className="error-text">Message is required</p>}
     </div>
-    <button type="submit" class="btn btn-primary">Submit</button>
+    <button type="submit" className="btn btn-primary">Submit</button>
     {errorMessage && (
       <div>
         <p className="error-text">{errorMessage}</p>
       </div>
     )}
     </form>
+    </div>
   )
 }
