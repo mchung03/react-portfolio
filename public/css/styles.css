@@ -23,11 +23,20 @@
     padding: 1rem;
     border-radius: 1rem;
     margin-top: 2rem;
+    border: black 2px solid;
 }
 
-.card-color,
-.card-body {
+.card-color {
     background-color: #f1f1ef;
+}
+
+div.card {
+    background-color: #f1f1ef;
+    border: black 2px solid;
+}
+
+.list-group {
+    border: black 2px solid;
 }
 
 li.list-group-item {
