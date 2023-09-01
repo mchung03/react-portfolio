@@ -1,6 +1,6 @@
 export default function About() {
     return (
-        <div class="card mb-3 mt-5" style={{maxWidth: "940px"}}>
+        <div class="card mb-3 mt-5 mx-auto" style={{maxWidth: "1048px"}}>
         <div class="row g-0">
             <div class="col-md-4">
             <img src="../../../images/image0.jpeg" class="img-fluid rounded-start" alt="Profile Photo"></img>
