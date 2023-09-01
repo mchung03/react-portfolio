@@ -28,7 +28,6 @@ export default function PortfolioContainer() {
             <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
             <main className="mx-3">{renderPage()}</main>
 
-            {/* does the footer go in here? */}
             <i class="fa-brands fa-github"></i>
         </div>
     );
