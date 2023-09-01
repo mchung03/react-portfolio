@@ -1,74 +1,45 @@
 export default function Resume() {
     return(
         <div>
-            <div>
-                <a href = "Chung_Minhee_Resume.pdf" download = "file">  
+            <button class="btn btn-dark mt-3 mb-5">
+                <a href = "Chung_Minhee_Resume.pdf" class="h4 text-primary" download = "file">  
                 <b> Download Resume </b>  
                 </a>  
-            </div>
-            <div class="accordion" id="accordionExample">
-            <div class="accordion-item">
-            <h2 class="accordion-header">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                Code-Related Skills
-                </button>
-            </h2>
-            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                    <pre>
-                    - HTML/CSS/JavaScript
-                    - Web APIs
-                    - Node.js 
-                    - Express.js 
-                    - React.js
-                    - MySQL 
-                    - NoSQL 
-                    - MVC
-                    </pre>
-                </div>
-            </div>
-            </div>
-            <div class="accordion-item">
-            <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                Other Technical Skills
-                </button>
-            </h2>
-            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                    <pre>
-                        - Project Management 
-                        - Bilingual (English, Korean)
-                        - Expert in Google Suite
-                        - Front-End Development 
-                        - Back-End Development
-                        - Wireframing 
-                    </pre>
-                </div>
-            </div>
-            </div>
-            <div class="accordion-item">
-            <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                Soft Skills
-                </button>
-            </h2>
-            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                    <pre>
-                        - Problem Solving 
-                        - Time Management 
-                        - Attention to Detail 
-                        - Teamwork 
-                        - Communication 
-                        - Patience
-                        - Openness to Criticism 
-                        - Stress Management 
-                    </pre>
-                </div>
-            </div>
-            </div>
-        </div>
+            </button>
+
+            <ul class="list-group mb-5">
+            <li class="list-group-item list-group-item-primary" aria-current="true">Code-Related Skills</li>
+            <li class="list-group-item">HTML/CSS/JavaScript</li>
+            <li class="list-group-item">Web APIs</li>
+            <li class="list-group-item">Node.js</li>
+            <li class="list-group-item">Express.js</li>
+            <li class="list-group-item">React.js</li>
+            <li class="list-group-item">MySQL</li>
+            <li class="list-group-item">NoSQL</li>
+            <li class="list-group-item">MVC</li>
+            <li class="list-group-item">MERN</li>
+            </ul>
+
+            <ul class="list-group mb-5">
+            <li class="list-group-item list-group-item-primary" aria-current="true">Technical Skills</li>
+            <li class="list-group-item">Bilingual (English, Korean)</li>
+            <li class="list-group-item">Expert in Google Suite</li>
+            <li class="list-group-item">Front-End Development</li>
+            <li class="list-group-item">Back-End Development</li>
+            <li class="list-group-item">Wireframing</li>
+            </ul>
+
+            <ul class="list-group">
+            <li class="list-group-item list-group-item-primary" aria-current="true">Soft Skills</li>
+            <li class="list-group-item">Problem Solving </li>
+            <li class="list-group-item">Time Management</li>
+            <li class="list-group-item">Attention to Detail</li>
+            <li class="list-group-item">Teamwork</li>
+            <li class="list-group-item">Communication</li>
+            <li class="list-group-item">Patience</li>
+            <li class="list-group-item">Openness to Criticism</li>
+            <li class="list-group-item">Stress Management</li>
+            </ul>
       </div>
     )
 }
