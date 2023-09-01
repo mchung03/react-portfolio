@@ -25,12 +25,12 @@ export default function PortfolioContainer() {
 
     return (
         <div>
-            <header class="ms-3">
+            <header class="text-center mb-3">
                 <h2>Minhee Chung</h2>
             </header>
             <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
             <main className="mx-3">{renderPage()}</main>
-            <footer class="mt-3 mb-4 ms-5">
+            <footer class="mt-3 ms-4">
                 <h5>Links:</h5>
                 <a href="https://www.linkedin.com/in/minhee-chung/" target="_blank"><i class="fa-brands fa-github fa-2xl me-3"></i></a>
                 <a href="https://github.com/mchung03" target="_blank"><i class="fa-brands fa-linkedin fa-2xl me-3"></i></a>
