@@ -40,8 +40,13 @@ export default function Form() {
   const handleFormSubmit = (e) => {
     e.preventDefault();
 
-    if (!email || !name || !message || !validateEmail(email)) {
+    if (!email || !name || !message) {
       setErrorMessage('This is required');
+      return;
+    }
+
+    if(!validateEmail(email)) {
+      setErrorMessage('This is not a valid email')
       return;
     }
 

@@ -29,6 +29,7 @@ export default function PortfolioContainer() {
             <main className="mx-3">{renderPage()}</main>
 
             {/* does the footer go in here? */}
+            <i class="fa-brands fa-github"></i>
         </div>
     );
 }

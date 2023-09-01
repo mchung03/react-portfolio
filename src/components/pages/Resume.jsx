@@ -2,7 +2,6 @@ export default function Resume() {
     return(
         <div>
             <div>
-                {/* how do you link a pdf */}
                 <a href = "Chung_Minhee_Resume.pdf" download = "file">  
                 <b> Download Resume </b>  
                 </a>  
