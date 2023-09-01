@@ -4,7 +4,7 @@
 
 This project was built using React.js to create a portfolio where future employers can access information about me and view previous projects in one place. I was able to learn how to create an application using Vite and the flow and connection of all the files together.
 
-Deployed link: 
+Deployed link: https://main--clinquant-crisp-baa962.netlify.app/#about 
 
 ## Usage
 
