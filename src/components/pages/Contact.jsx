@@ -63,61 +63,51 @@ export default function Form() {
   };
 
   return (
-    <div className="container text-center">
-      <form className="form" onSubmit={handleFormSubmit}>
-        <input
-          value={email}
-          name="email"
-          onChange={handleInputChange}
-          onBlur={handleInputBlur}
-          type="email"
-          placeholder="email"
-        />
-        {emailTouched && !email && <p className="error-text">Email is required</p>}
-        
-        <input
-          value={name}
-          name="name"
-          onChange={handleInputChange}
-          onBlur={handleInputBlur}
-          type="text"
-          placeholder="name"
-        />
-        {nameTouched && !name && <p className="error-text">Name is required</p>}
-        
-        <input
-          value={message}
-          name="message"
-          onChange={handleInputChange}
-          onBlur={handleInputBlur}
-          type="text"
-          placeholder="message"
-        />
-        {messageTouched && !message && <p className="error-text">Message is required</p>}
-        
-        <button type="submit">Submit</button>
-      </form>
-      {errorMessage && (
-        <div>
-          <p className="error-text">{errorMessage}</p>
-        </div>
-      )}
+  <form class="mt-2" onSubmit={handleFormSubmit}>
+  <div class="mb-3">
+    <label class="form-label">Name</label>
+    <input
+      value={email}
+      name="email"
+      onChange={handleInputChange}
+      onBlur={handleInputBlur}
+      type="email"
+      class="form-control" 
+      placeholder="name@example.com"></input>
+    {emailTouched && !email && <p className="error-text">Email is required</p>}
+  </div>
+  <div class="mb-3">
+    <label class="form-label">Email address</label>
+    <input 
+      value={name}
+      name="name"
+      onChange={handleInputChange}
+      onBlur={handleInputBlur}
+      type="text"
+      class="form-control" 
+      placeholder="John Doe"></input>
+    {nameTouched && !name && <p className="error-text">Name is required</p>}
+  </div>
+  <div class="mb-3">
+    <label class="form-label">Message</label>
+    <textarea 
+      className="form-control" 
+      value={message}
+      name="message"
+      onChange={handleInputChange}
+      onBlur={handleInputBlur}
+      type="text"
+      placeholder="message"
+      rows="3">
+    </textarea>
+    {messageTouched && !message && <p className="error-text">Message is required</p>}
     </div>
-
-/* <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-
-<div class="mb-3">
-  <label for="exampleFormControlInput1" class="form-label">Name</label>
-  <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="John Doe">
-</div>
-<div class="mb-3">
-  <label for="exampleFormControlInput2" class="form-label">Email address</label>
-  <input type="email" class="form-control" id="exampleFormControlInput2" placeholder="name@example.com">
-</div>
-<div class="mb-3">
-  <label for="exampleFormControlTextarea1" class="form-label">Message</label>
-  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-</div> */
-
-  );
+    <button type="submit" class="btn btn-primary">Submit</button>
+    {errorMessage && (
+      <div>
+        <p className="error-text">{errorMessage}</p>
+      </div>
+    )}
+    </form>
+  )
 }
