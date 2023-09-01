@@ -27,8 +27,13 @@ export default function PortfolioContainer() {
         <div>
             <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
             <main className="mx-3">{renderPage()}</main>
-
-            <i class="fa-brands fa-github"></i>
+            <footer class="mt-3 mb-4 ms-5">
+                <h5>Links:</h5>
+                <a href="https://www.linkedin.com/in/minhee-chung/" target="_blank"><i class="fa-brands fa-github fa-2xl me-3"></i></a>
+                <a href="https://github.com/mchung03" target="_blank"><i class="fa-brands fa-linkedin fa-2xl me-3"></i></a>
+                <a href="https://medium.com/@minhee.chung14" target="_blank"><i class="fa-brands fa-medium fa-2xl"></i></a>
+            </footer>
+            
         </div>
     );
 }
