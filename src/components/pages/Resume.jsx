@@ -24,21 +24,24 @@ export default function Resume() {
             <li className="list-group-item list-group-item-primary" aria-current="true">Technical Skills</li>
             <li className="list-group-item">Bilingual (English, Korean)</li>
             <li className="list-group-item">Expert in Google Suite</li>
+            <li className="list-group-item">Microsoft Suite</li>
             <li className="list-group-item">Front-End Development</li>
             <li className="list-group-item">Back-End Development</li>
             <li className="list-group-item">Wireframing</li>
+            <li className="list-group-item">R Studio</li>
+            <li className="list-group-item">Esri (GIS)</li>
             </ul>
 
             <ul className="list-group">
             <li className="list-group-item list-group-item-primary" aria-current="true">Soft Skills</li>
             <li className="list-group-item">Problem Solving </li>
+            <li className="list-group-item">Project Management</li>
             <li className="list-group-item">Time Management</li>
             <li className="list-group-item">Attention to Detail</li>
             <li className="list-group-item">Teamwork</li>
             <li className="list-group-item">Communication</li>
             <li className="list-group-item">Patience</li>
             <li className="list-group-item">Openness to Criticism</li>
-            <li className="list-group-item">Stress Management</li>
             </ul>
       </div>
     )

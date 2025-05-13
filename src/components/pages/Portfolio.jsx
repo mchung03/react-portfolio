@@ -6,23 +6,21 @@ export default function Portfolio() {
 				<div className="row row-cols-2 g-4 mt-3 mb-4">
 					<div className="col">
 						<div className="card">
-							<img src="../../images/widgetwizard.PNG" class="card-img-top" alt="WidgetWizard"></img>
+							<img src="../../images/marketing.png" class="card-img-top" alt="MarketingPlan"></img>
 							<div className="card-body">
-								<h5 className="card-title">WidgetWizard</h5>
-								<p className="card-text">Customize your own dashboard with draggable widgets created with data from different APIs!</p>
-								<a href="https://tranquil-tor-75275-57652b10176e.herokuapp.com/" target="_blank" className="card-link">Website</a>
-								<a href="https://github.com/Popiuy/WidgetWizard.git" target="_blank" className="card-link">GitHub</a>
+								<h5 className="card-title">Lululemon Marketing Plan</h5>
+								<p className="card-text">An extensive analysis of Lululemon's 2023 Annual Report for Marketing and Distribution Management class.</p>
+								<a href="Marketing_Plan.pdf" target="_blank" className="card-link">Download PDF</a>
 							</div>
 						</div>
 					</div>
 					<div className="col">
 						<div className="card">
-							<img src="../../images/catfish.PNG" class="card-img-top" alt="CatFish"></img>
+							<img src="../../images/systems.png" class="card-img-top" alt="Systems"></img>
 							<div className="card-body">
-								<h5 className="card-title">CatFish</h5>
-								<p className="card-text">Made with HTML, CSS, JavaScript, and APIs, fish animal crossing fish to buy cat facts from the store!</p>
-								<a href="https://kaylaasana.github.io/CatFish/" target="_blank" className="card-link">Website</a>
-								<a href="https://github.com/kaylaasana/CatFish.git" target="_blank" className="card-link">GitHub</a>
+								<h5 className="card-title">Yogurtland Inventory System</h5>
+								<p className="card-text">Reinvention of inventory system using data flow diagrams and entity-relationship models for Systems Analysis and Design class.</p>
+								<a href="Systems_Design.pdf" target="_blank" className="card-link">Download PDF</a>
 							</div>
 						</div>
 					</div>
@@ -31,12 +29,12 @@ export default function Portfolio() {
 				<div className="row row-cols-2 g-4 mb-4">
 					<div className="col">
 						<div className="card">
-							<img src="../../images/reel.PNG" class="card-img-top" alt="Reel Reviews"></img>
+							<img src="../../images/catfish.PNG" class="card-img-top" alt="CatFish"></img>
 							<div className="card-body">
-								<h5 className="card-title">Reel Reviews</h5>
-								<p className="card-text">Fetching data from the OMDB API, search for your favorite movies and create reviews with an authorized account!</p>
-								<a href="https://cinemaserver-7dafae9cd971.herokuapp.com/" target="_blank" className="card-link">Website</a>
-								<a href="https://github.com/mattschneble/ReelReviews.git" target="_blank" className="card-link">GitHub</a>
+								<h5 className="card-title">CatFish</h5>
+								<p className="card-text">Made with HTML, CSS, JavaScript, and APIs, fish animal crossing fish to buy cat facts from the store!</p>
+								<a href="https://kaylaasana.github.io/CatFish/" target="_blank" className="card-link">Website</a>
+								<a href="https://github.com/kaylaasana/CatFish.git" target="_blank" className="card-link">GitHub</a>
 							</div>
 						</div>
 					</div>

@@ -10,7 +10,7 @@ export default function About() {
             <div className="col-md-8 card-color">
             <div className="card-body">
                 <h4 className="card-title fw-semibold">Biography</h4>
-                <p className="card-text">Minhee Chung is a student at the UC Berkeley Extension Fullstack Coding Bootcamp. She is also currently a student at the University of California, Riverside studying Business Administration with a concentration in Information Systems and hopes to gain more experience in the coding field.</p>
+                <p className="card-text">Minhee Chung graduated from the University of California, Riverside in Business Administration with a concentration in Information Systems. She also took a full stack web development bootcamp at the UC Berkeley Extension in the summer of 2023, which is where she learned to create this website from scratch!</p>
             </div>
             </div>
         </div>
