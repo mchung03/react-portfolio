@@ -26,6 +26,12 @@
     border: black 2px solid;
 }
 
+.google-form {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .card-color {
     background-color: #f1f1ef;
 }
