@@ -50,6 +50,17 @@ export default function Form() {
       return;
     }
 
+    
+    // Construct the content
+    const fileContent = `Name: ${name}\nEmail: ${email}\nMessage: ${message}`;
+
+    // Create a Blob and download it
+    const blob = new Blob([fileContent], { type: 'text/plain' });
+    const link = document.createElement('a');
+    link.href = URL.createObjectURL(blob);
+    link.download = 'form-submission.txt';
+    link.click();
+
     setErrorMessage('');
     setName('');
     setEmail('');
