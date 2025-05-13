@@ -37,7 +37,31 @@ export default function Form() {
     }
   };
 
-  const handleFormSubmit = (e) => {
+  // const handleFormSubmit = (e) => {
+  //   e.preventDefault();
+
+  //   if (!email || !name || !message) {
+  //     setErrorMessage('This is required');
+  //     return;
+  //   }
+
+  //   if(!validateEmail(email)) {
+  //     setErrorMessage('This is not a valid email')
+  //     return;
+  //   }
+
+  //   setErrorMessage('');
+  //   setName('');
+  //   setEmail('');
+  //   setMessage('');
+  //   setEmailTouched(false);
+  //   setNameTouched(false);
+  //   setMessageTouched(false);
+
+  //   alert(`Hello ${name}`);
+  // };
+
+    const handleFormSubmit = async (e) => {
     e.preventDefault();
 
     if (!email || !name || !message) {
@@ -45,31 +69,36 @@ export default function Form() {
       return;
     }
 
-    if(!validateEmail(email)) {
-      setErrorMessage('This is not a valid email')
+    if (!validateEmail(email)) {
+      setErrorMessage('This is not a valid email');
       return;
     }
 
-    
-    // Construct the content
-    const fileContent = `Name: ${name}\nEmail: ${email}\nMessage: ${message}`;
+    try {
+      const response = await fetch('http://localhost:3001/submit-form', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ name, email, message }),
+      });
 
-    // Create a Blob and download it
-    const blob = new Blob([fileContent], { type: 'text/plain' });
-    const link = document.createElement('a');
-    link.href = URL.createObjectURL(blob);
-    link.download = 'form-submission.txt';
-    link.click();
+      if (!response.ok) {
+        throw new Error('Failed to submit form');
+      }
 
-    setErrorMessage('');
-    setName('');
-    setEmail('');
-    setMessage('');
-    setEmailTouched(false);
-    setNameTouched(false);
-    setMessageTouched(false);
-
-    alert(`Hello ${name}`);
+      alert(`Hello ${name}`);
+      setErrorMessage('');
+      setName('');
+      setEmail('');
+      setMessage('');
+      setEmailTouched(false);
+      setNameTouched(false);
+      setMessageTouched(false);
+    } catch (error) {
+      console.error(error);
+      setErrorMessage('Something went wrong');
+    }
   };
 
   return (
